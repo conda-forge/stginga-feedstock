@@ -19,14 +19,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.7
     - setuptools_scm
   run:
-    - python >=3.5
+    - python >=3.7
     - numpy
-    - scipy
-    - astropy
-    - ginga
+    - scipy >=0.18
+    - astropy >=3
+    - ginga >=2.7
 
 test:
   requires:
@@ -49,5 +49,3 @@ about:
 extra:
   recipe-maintainers:
     - pllim
-    - jhunkeler
-    - rendinam
