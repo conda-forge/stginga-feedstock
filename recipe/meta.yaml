@@ -1,5 +1,5 @@
 {% set name = "stginga" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c6dc8bb580b8afda8fb3442ca5fa261cdfa82bc80a43fc6f9804f58fac130269
+  sha256: abab7b1a644d2663e337e00585571e3c1faee262f6b5c638afaba17c33f8b7bd
 
 build:
   noarch: python
@@ -19,14 +19,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.7
     - setuptools_scm
   run:
-    - python >=3.5
+    - python >=3.7
     - numpy
-    - scipy
-    - astropy
-    - ginga
+    - scipy >=0.18
+    - astropy >=3
+    - ginga >=2.7
 
 test:
   requires:
@@ -49,5 +49,3 @@ about:
 extra:
   recipe-maintainers:
     - pllim
-    - jhunkeler
-    - rendinam
