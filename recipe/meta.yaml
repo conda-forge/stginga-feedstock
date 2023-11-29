@@ -10,7 +10,7 @@ source:
   sha256: e4fbd9b5e504c682638760c581c59a17109b31e08167b9a6bd19c87a01d05a28
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - stginga = stginga.gingawrapper:_main
   script: {{ PYTHON }} -m pip install . -vv
