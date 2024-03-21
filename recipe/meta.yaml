@@ -1,5 +1,5 @@
 {% set name = "stginga" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e4fbd9b5e504c682638760c581c59a17109b31e08167b9a6bd19c87a01d05a28
+  sha256: ba90e26f45af1a63399e7d06a2770e82dc0e29d5182d112fc6681994556fd9ae
 
 build:
-  number: 2
+  number: 0
   entry_points:
     - stginga = stginga.gingawrapper:_main
   script: {{ PYTHON }} -m pip install . -vv
