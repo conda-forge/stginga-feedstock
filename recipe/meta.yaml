@@ -14,7 +14,7 @@ build:
   entry_points:
     - stginga = stginga.gingawrapper:_main
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<38]
+  skip: true  # [py<39]
 
 requirements:
   host:
