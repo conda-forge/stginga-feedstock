@@ -1,5 +1,5 @@
 {% set name = "stginga" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ba90e26f45af1a63399e7d06a2770e82dc0e29d5182d112fc6681994556fd9ae
+  sha256: 1ae41486a91c529b355cea6b566cde3527c2ced5c6595d2e735ac07a1b23cb30
 
 build:
   number: 0
