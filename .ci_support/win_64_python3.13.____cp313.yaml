@@ -1,9 +1,5 @@
-c_stdlib:
-- vs
-c_stdlib_version:
-- '2019'
 channel_sources:
-- conda-forge
+- conda-forge/label/python_rc,conda-forge
 channel_targets:
 - conda-forge main
 pin_run_as_build:
@@ -11,6 +7,9 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_73_pypy
+- 3.13.* *_cp313
 target_platform:
 - win-64
+zip_keys:
+- - python
+  - channel_sources
